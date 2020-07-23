@@ -1,0 +1,17 @@
+{
+    "keyboard_name": "Camro",
+    "url": "",
+    "maintainer": "Cameron Buss",
+    "width": 3,
+    "height": 1,
+    "layouts": {
+      "LAYOUT_default": {
+        "layout": [
+          {"label":"0", "x":0, "y":0},
+          {"label":"1", "x":1, "y":0},
+          {"label":"2", "x":2, "y":0}
+        ]
+      }
+    }
+}
+  
