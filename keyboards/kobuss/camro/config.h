@@ -19,8 +19,13 @@
 #define DEBOUNCE    5
 
 #define RGBLIGHT_ANIMATIONS
-/* #define RGBW */
+#define RGBW
+#define SK6812
 #define RGB_DI_PIN B15
 #define RGBLED_NUM 4
 #define WS2812_SPI SPID2
 #define WS2812_SPI_MOSI_PAL_MODE 0
+
+#define ENCODERS_PAD_A { A2 }
+#define ENCODERS_PAD_B { A1 }
+#define ENCODER_RESOLUTION 4
