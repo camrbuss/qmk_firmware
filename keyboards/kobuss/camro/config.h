@@ -29,3 +29,4 @@
 #define ENCODERS_PAD_A { A2 }
 #define ENCODERS_PAD_B { A1 }
 #define ENCODER_RESOLUTION 4
+#define TAP_CODE_DELAY 10
