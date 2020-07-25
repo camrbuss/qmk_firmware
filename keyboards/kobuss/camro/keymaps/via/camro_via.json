@@ -1,0 +1,12 @@
+{
+  "name": "Camro",
+  "vendorId": "0xDEAD",
+  "productId": "0xBEEF",
+  "lighting": "none",
+  "matrix": { "rows": 2, "cols": 2 },
+  "layouts": {
+    "keymap": [
+      ["1,1", "0,0", "1,0", "0,1"]
+    ]
+  }
+}

@@ -2,7 +2,7 @@
 MCU = STM32F072
 
 EXTRAKEY_ENABLE = yes	# AMedia keys
-CONSOLE_ENABLE = yes	# Console for debug
+CONSOLE_ENABLE = no	# Console for debug
 COMMAND_ENABLE = yes    # Commands for debug and configuration
 CUSTOM_MATRIX = no # Custom matrix file
 ENCODER_ENABLE = yes
