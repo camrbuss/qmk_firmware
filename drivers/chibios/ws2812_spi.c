@@ -29,7 +29,7 @@
 #endif
 
 #define BYTES_FOR_LED_BYTE 4
-#ifdef RGBW
+#ifdef SK6812
 #    define NB_COLORS 4
 #else
 #    define NB_COLORS 3

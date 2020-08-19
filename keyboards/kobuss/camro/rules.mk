@@ -2,12 +2,12 @@
 MCU = STM32F072
 
 EXTRAKEY_ENABLE = yes	# AMedia keys
-CONSOLE_ENABLE = no	# Console for debug
+CONSOLE_ENABLE = yes	# Console for debug
 COMMAND_ENABLE = yes    # Commands for debug and configuration
 CUSTOM_MATRIX = no # Custom matrix file
 ENCODER_ENABLE = yes
 RGBLIGHT_ENABLE = yes
 WS2812_DRIVER = spi
 
-# Enter lower-power sleep mode when on the ChibiOS idle thread
-OPT_DEFS += -DCORTEX_ENABLE_WFI_IDLE=TRUE
+# OLED_DRIVER_ENABLE = yes
+QUANTUM_LIB_SRC += i2c_master.c
