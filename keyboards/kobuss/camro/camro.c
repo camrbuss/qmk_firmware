@@ -1,5 +1,4 @@
 #include "camro.h"
-#include "i2c_master.h"
 
 #ifdef RGBLIGHT_ANIMATIONS
 void keyboard_post_init_user(void) {
@@ -10,7 +9,6 @@ void keyboard_post_init_user(void) {
     rgblight_disable_noeeprom();
 
     setPinOutput(TEST_OUTPUT_PIN);
-    i2c_init();
 }
 #endif
 
@@ -19,10 +17,21 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
     if (record->event.pressed == true)
     {
       togglePin(TEST_OUTPUT_PIN);
-      uint8_t data[1] = {0x00};
-      int16_t x = i2c_transmit(0x3C << 1, data, 1, 100);
-      printf_("Test Send Result: %i\n", x);
     }
   
   return true;
 }
+
+#ifdef OLED_DRIVER_ENABLE
+void oled_task_user(void) {
+    // Host Keyboard Layer Status
+    oled_write("Layer: ", false);
+    oled_write_ln("Undefined", false);
+
+    int x = get_highest_layer(layer_state);
+    char f[2];
+    itoa(x, f, 2);
+    oled_write("Mod: ", false);
+    oled_write(f, false);
+}
+#endif
