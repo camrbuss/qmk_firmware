@@ -17,7 +17,7 @@
 /* LSHFT	LMOD	Z	X	C	V	B	N	M	LT	GT	RSHFT */
 /* LCTRL	LSUP	LALT	LSPC	SPC	RSPC	RALT	RFN	RCTRL	NO_PIN	NO_PIN	NO_PIN */
 #define DIRECT_PINS { \
-    { B9, E2, E6, E10, C1, A0, A4, C4, B1, E9, E13, B10 }, \
+    { B9, E2, E6, F10, C1, A0, A4, C4, B1, E9, E13, B10 }, \
     { B8, E3, C13, C0, F2, A1, A5, C5, B2, E10, E14, NO_PIN }, \
     { B5, E0, E4, F9, C3, F3, A3, A6, B0, E7, E11, E15 }, \
     { B4, E1, E5, C2, A2, A7, E8, E12, B11, NO_PIN, NO_PIN, B12 } \
@@ -48,3 +48,4 @@
 
 #define OLED_DISPLAY_WIDTH 	128
 #define OLED_DISPLAY_HEIGHT 32
+#define OLED_TIMEOUT 30000

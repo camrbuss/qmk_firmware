@@ -52,6 +52,10 @@ layer_state_t layer_state_set_user(layer_state_t state) {
   return state;
 }
 
+void suspend_power_down_user(void){
+    oled_off();
+}
+
 #ifdef OLED_DRIVER_ENABLE
 void oled_task_user(void) {
     oled_write_raw(kobusslogo, OLED_MATRIX_SIZE);
